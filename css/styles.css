@@ -1,0 +1,23 @@
+body {
+  padding: 30px;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+  padding: 30px;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.suggestionsContainer {
+  display: none; 
+}

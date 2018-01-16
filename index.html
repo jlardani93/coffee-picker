@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   <script src="js/jquery-3.2.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+  <title>choose your favorite pictures</title>
 </head>
   <body>
+     <div class="container-flex">
+       <div class="jumbotron">
+         <h1>Coffee Taste Matcher</h1>
+       </div>
 
+     <div class="instructions">
+       <h3>Below are nine pictures of different foods. Select all of those that look appealing to you and then submit the form. We will recommend to you the characteristics of your ideal coffee.</h3>
+     </div>
+     <div class="formContainer">
+       <form class="coffeeForm" action="index.html" method="post">
+         <button type="submit" class="btn">Submit Form</button>
+         <div class="row">
+           <div class="col-md-4">
+              <input type="checkbox" name="coffee" value="light"><img src="img/light.jpeg" alt=""><br>
+           </div>
+           <div class="col-md-4">
+              <input type="checkbox" name="coffee" value="medium"><img src="img/medium.jpg" alt=""><br>
+           </div>
+           <div class="col-md-4">
+              <input type="checkbox" name="coffee" value="heavy"><img src="img/heavy.jpeg" alt=""><br>
+           </div>
+           <div class="col-md-4">
+              <input type="checkbox" name="coffee" value="bitter"><img src="img/bitter.jpg" alt=""><br>
+           </div>
+           <div class="col-md-4">
+              <input type="checkbox" name="coffee" value="acidic"><img src="img/acidity.jpeg" alt=""><br>
+           </div>
+           <div class="col-md-4">
+              <input type="checkbox" name="coffee" value="sweet"><img src="img/sweet.jpeg" alt=""><br>
+           </div>
+           <div class="col-md-4">
+              <input type="checkbox" name="coffee" value="flowery"><img src="img/flower.jpeg" alt=""><br>
+           </div>
+           <div class="col-md-4">
+              <input type="checkbox" name="coffee" value="fruity"><img src="img/fruity.jpeg" alt=""><br>
+           </div>
+           <div class="col-md-4">
+              <input type="checkbox" name="coffee" value="chocolatey"><img src="img/chocolate.jpeg" alt=""><br>
+           </div>
+         </div>
+       </form>
+       <div class="suggestionsContainer">
+         <h3>The following are our recommendations for the ideal characteristics of your coffee.</h3>
+         <ul id="suggestions">
+         </ul>
+       </div>
+     </div>
+    </div>
   </body>
 </html>
