@@ -12,11 +12,11 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  font-family: georgia;
 }
 
 h3, ul {
   font-weight: lighter;
-  font-family:  monospace;
   color: ;#33312D
 }
 
@@ -26,11 +26,12 @@ h3, ul {
 }
 
 img {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border: 3px solid black;
   border-radius: 5px;
   box-shadow: 0px 0px 30px;
+  cursor: pointer; 
 }
 
 img:hover {
@@ -42,8 +43,12 @@ img:active {
 }
 
 .imgClick {
-  box-shadow: 0px 0px 25px inset;
-  border: 10px solid #82613f;
+  box-shadow: 0px 0px 10px;
+  border: 10px solid yellow;
+}
+
+input {
+  display: none;
 }
 
 .jumbotron {
@@ -63,8 +68,19 @@ h1 {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  font-size: 20px;
+  border: 2px solid black;
+  background-color: #5b462e;
+  color: white;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 25px black;
+  cursor: pointer;
 }
 
 .suggestionsContainer {
   display: none;
+}
+
+li {
+  font-size: 24px;
 }

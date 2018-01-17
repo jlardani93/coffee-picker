@@ -1,6 +1,15 @@
 $(document).ready(function(){
+  // $("img").click(function() {
+  //     console.log($(this.classList)[0]);
+  //   if ($(this.classList)[0] === "imgClick") {
+  //     $(this).removeClass("imgClick");
+  //   } else {
+  //       $(this).addClass("imgClick");
+  //   };
+  // });
+
   $("img").click(function() {
-    $(this).addClass("imgClick");
+      $(this).toggleClass("imgClick");
   });
 
   var flavorsArray = [];
