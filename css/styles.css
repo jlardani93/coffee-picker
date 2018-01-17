@@ -1,15 +1,49 @@
+html {
+  background-color: #C3B298;
+  padding: 50px;
+}
+
 body {
   padding: 30px;
+  background-color: white;
+    border: 5px solid black;
+  border-radius: 20px;
+  max-width: 1400px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; 
+}
+
+h3, ul {
+  font-weight: lighter;
+  font-family:  monospace;
+  color: ;#33312D
+}
+
+.col-md-4 {
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
 img {
   height: 400px;
   width: 400px;
-  padding: 30px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px;
 }
 
 .jumbotron {
   text-align: center;
+  color: white;
+  font-size: 50px;
+  background-color: #5b462e;
+  border: 3px solid black;
+  box-shadow: 0px 0px 25px black;
+}
+
+h1 {
+  font-size: 70px;
 }
 
 .btn {
@@ -19,5 +53,5 @@ img {
 }
 
 .suggestionsContainer {
-  display: none; 
+  display: none;
 }

@@ -14,11 +14,16 @@ $(document).ready(function(){
     });
     $(".suggestionsContainer").show();
   };
+  var reset = function() {
+    flavorsArray = [];
+    $("#suggestions").empty();
+  };
 
   $(".coffeeForm").submit(function(event){
-      defineFlavorsArray();
-      giveSuggestion();
-      event.preventDefault();
+    reset();
+    defineFlavorsArray();
+    giveSuggestion();
+    event.preventDefault();
   });
 
 });
