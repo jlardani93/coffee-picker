@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  $("img").click(function() {
+    $(this).addClass("imgClick");
+  });
 
   var flavorsArray = [];
   var defineFlavorsArray = function() {
